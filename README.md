@@ -65,8 +65,6 @@ of the web pages shall be different. The students will be able to see courses an
 The professors shall be able to view the students enrolled in their courses and change the
 enrollment of their particular sections. The administrators will be able to manipulate professors'
 courses and students' enrollment.
-### Context Diagram
-image here
 ### Functional Requirements
 At a high level, the system will keep track of a given university's administrators, counselors,
 students, professors, courses, and sections of courses in order to create a course registration
@@ -143,12 +141,24 @@ example, a student shall not be able to assign a professor to a course, that sha
 power reserved for administrators only.
 - The counsellors shall have a similar view, but they have certain special powers, such as
 overriding prerequisites for the student.
+### Context Diagram
+![image](https://github.com/nasif-mahmood/University-Course-Registration-DBMS/blob/main/images/ContextDiagram.png)
+
 ## Entity Relationship Model
-image here
+![image](https://github.com/nasif-mahmood/University-Course-Registration-DBMS/blob/main/images/ERDiagram.png)
+
 ## Relational Database Schema
-image here
+![image](https://github.com/nasif-mahmood/University-Course-Registration-DBMS/blob/main/images/RelationalSchema.png)
+
 ## Functional Dependencies
-image here
+![image](https://github.com/nasif-mahmood/University-Course-Registration-DBMS/blob/main/images/FD1.png)
+![image](https://github.com/nasif-mahmood/University-Course-Registration-DBMS/blob/main/images/FD2.png)
+![image](https://github.com/nasif-mahmood/University-Course-Registration-DBMS/blob/main/images/FD3.png)
+![image](https://github.com/nasif-mahmood/University-Course-Registration-DBMS/blob/main/images/FD4.png)
+![image](https://github.com/nasif-mahmood/University-Course-Registration-DBMS/blob/main/images/FD5.png)
+![image](https://github.com/nasif-mahmood/University-Course-Registration-DBMS/blob/main/images/FD6.png)
+![image](https://github.com/nasif-mahmood/University-Course-Registration-DBMS/blob/main/images/FD7.png)
+
 ## SQL Statements for Database Construction and Implementation
 ### CREATE TABLE Commands
 User
@@ -710,9 +720,19 @@ Output
 | MATH 2417 | 100         |
 | MATH 2218 | 50          |
 | MIS 6308  | 30          |
-| NSC 3344  | 25          |
+| NSC 3344  | 25          |
+
 ## Snapshots of Tables using MySQL Workbench
-image here
+![image](https://github.com/nasif-mahmood/University-Course-Registration-DBMS/blob/main/images/SS1.png)
+![image](https://github.com/nasif-mahmood/University-Course-Registration-DBMS/blob/main/images/SS2.png)
+![image](https://github.com/nasif-mahmood/University-Course-Registration-DBMS/blob/main/images/SS3.png)
+![image](https://github.com/nasif-mahmood/University-Course-Registration-DBMS/blob/main/images/SS4.png)
+![image](https://github.com/nasif-mahmood/University-Course-Registration-DBMS/blob/main/images/SS6.png)
+
+![image](https://github.com/nasif-mahmood/University-Course-Registration-DBMS/blob/main/images/SS5.png)
+
+![image](https://github.com/nasif-mahmood/University-Course-Registration-DBMS/blob/main/images/SS7.png)
+
 ## User Application Interface
 ### Menu Options and Associated SQL Statements
 **Options for every user**
@@ -900,7 +920,60 @@ VALUES(input);
 DELETE FROM USER WHERE User_ID = (input);
 ```
 ### Application Demonstration
-image here
+#### Login Screen
+
+![image](https://github.com/nasif-mahmood/University-Course-Registration-DBMS/blob/main/images/GUI1.png)
+![image](https://github.com/nasif-mahmood/University-Course-Registration-DBMS/blob/main/images/GUI2.png)
+![image](https://github.com/nasif-mahmood/University-Course-Registration-DBMS/blob/main/images/GUI3.png)
+
+#### Student View
+![image](https://github.com/nasif-mahmood/University-Course-Registration-DBMS/blob/main/images/GUI4.png)
+
+#### Course History
+![image](https://github.com/nasif-mahmood/University-Course-Registration-DBMS/blob/main/images/GUI5.png)
+#### Removing Courses
+##### Initial
+
+![image](https://github.com/nasif-mahmood/University-Course-Registration-DBMS/blob/main/images/GUI6.png)
+
+##### Removing AHST 1101.001
+
+![image](https://github.com/nasif-mahmood/University-Course-Registration-DBMS/blob/main/images/GUI7.png)
+
+#### Adding Courses 
+##### Initial
+
+![image](https://github.com/nasif-mahmood/University-Course-Registration-DBMS/blob/main/images/GUI8.png)
+
+##### Adding Course_ID 2
+
+![image](https://github.com/nasif-mahmood/University-Course-Registration-DBMS/blob/main/images/GUI9.png)
+
+##### Attempting to add a course where prerequisites are not met
+
+![image](https://github.com/nasif-mahmood/University-Course-Registration-DBMS/blob/main/images/GUI10.png)
+
+#### Counselor View
+*The search courses window will be similar to the add/drop courses window. However, there will be no add/drop button. Clicking on a student in the scrollbar should bring up that student's view. The reset button will remove all search filters and restore the default layout of the students in the scrollbar.*
+
+![image](https://github.com/nasif-mahmood/University-Course-Registration-DBMS/blob/main/images/GUI11.png)
+
+#### Professor View
+
+![image](https://github.com/nasif-mahmood/University-Course-Registration-DBMS/blob/main/images/GUI12.png)
+
+#### Section View
+
+![image](https://github.com/nasif-mahmood/University-Course-Registration-DBMS/blob/main/images/GUI13.png)
+
+#### Dean View
+
+![image](https://github.com/nasif-mahmood/University-Course-Registration-DBMS/blob/main/images/GUI14.png)
+
+#### Admin View
+
+![image](https://github.com/nasif-mahmood/University-Course-Registration-DBMS/blob/main/images/GUI15.png)
+
 ## Try it out
 ## Conclusion
 The Course Registration System had to be built from the ground up. 
