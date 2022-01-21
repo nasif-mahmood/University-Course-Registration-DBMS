@@ -974,7 +974,6 @@ DELETE FROM USER WHERE User_ID = (input);
 
 ![image](https://github.com/nasif-mahmood/University-Course-Registration-DBMS/blob/main/images/GUI15.png)
 
-## Try it out
 ## Conclusion
 The Course Registration System had to be built from the ground up. 
 Realizing what the application had to do, a database was needed in 
